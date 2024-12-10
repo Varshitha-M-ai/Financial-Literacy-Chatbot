@@ -1,0 +1,582 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": ["Hi", "Hello", "Hey", "What's up?", "How are you?", "Good morning", "Good evening"],
+            "responses": ["Hello!", "Hi there!", "Hey! How can I assist you?", "Greetings!", "Good to see you!"]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["Bye", "Goodbye", "See you later", "Take care", "Catch you later"],
+            "responses": ["Goodbye!", "Take care!", "See you later!", "Have a great day!", "Bye!"]
+        },
+        {
+            "tag": "thanks",
+            "patterns": ["Thanks", "Thank you", "Much appreciated", "Thanks a lot", "I appreciate it"],
+            "responses": ["You're welcome!", "No problem!", "Glad I could help!", "Happy to assist!", "Anytime!"]
+        },
+        {
+            "tag": "about",
+            "patterns": ["Who are you?", "What are you?", "What is your purpose?", "Tell me about yourself"],
+            "responses": ["I'm a financial literacy chatbot here to help you manage your money better.", "I provide assistance with personal finance and budgeting.", "My purpose is to help you become financially savvy!"]
+        },
+        {
+            "tag": "budgeting",
+            "patterns": ["How do I create a budget?", "What's the best budgeting method?", "Can you help me budget?", "What is budgeting?", "How to start budgeting?"],
+            "responses": [
+                "Budgeting is the process of tracking your income and expenses to manage your money effectively.",
+                "To create a budget, list your income and expenses, then allocate money towards essentials, savings, and discretionary spending.",
+                "A popular method is the 50/30/20 rule: 50% for needs, 30% for wants, and 20% for savings."
+            ]
+        },
+        {
+            "tag": "savings",
+            "patterns": ["How can I save money?", "What are some saving tips?", "How do I build savings?", "Why is saving important?"],
+            "responses": [
+                "Start by setting savings goals and automating your savings.",
+                "Cut unnecessary expenses and focus on needs over wants.",
+                "Saving money provides financial security and prepares you for unexpected expenses."
+            ]
+        },
+        {
+            "tag": "investing",
+            "patterns": ["What is investing?", "How do I start investing?", "What are good investments?", "Why should I invest?"],
+            "responses": [
+                "Investing is the act of allocating resources to gain profitable returns.",
+                "You can invest in stocks, bonds, real estate, or mutual funds to grow your wealth over time.",
+                "Start by understanding your risk tolerance and investment goals."
+            ]
+        },
+        {
+            "tag": "credit",
+            "patterns": ["What is a credit score?", "How can I check my credit score?", "How do I improve my credit score?"],
+            "responses": [
+                "A credit score is a number that indicates your creditworthiness.",
+                "You can check your credit score through free services like Credit Karma or your bank.",
+                "To improve your credit score, pay bills on time, reduce debt, and monitor your credit regularly."
+            ]
+        },
+        {
+            "tag": "loans",
+            "patterns": ["What is a loan?", "How do loans work?", "Should I take a loan?", "What is interest on a loan?"],
+            "responses": [
+                "A loan is borrowed money that you repay with interest over time.",
+                "Loans can help fund large expenses, but be mindful of the interest rates and repayment terms.",
+                "Ensure you can afford the monthly payments before taking a loan."
+            ]
+        },
+        {
+            "tag": "debt_management",
+            "patterns": ["How can I manage debt?", "What should I do about debt?", "How do I pay off debt?"],
+            "responses": [
+                "Start by listing all your debts and prioritizing high-interest ones.",
+                "Consider the debt snowball method: pay off small debts first for motivation.",
+                "Stick to a budget to avoid accumulating more debt."
+            ]
+        },
+        {
+            "tag": "retirement",
+            "patterns": ["How should I plan for retirement?", "What is a retirement account?", "When should I start saving for retirement?"],
+            "responses": [
+                "Start saving for retirement early to benefit from compound interest.",
+                "Consider retirement accounts like 401(k)s or IRAs for tax advantages.",
+                "Plan for retirement by estimating your future expenses and income sources."
+            ]
+        },
+        {
+            "tag": "taxes",
+            "patterns": ["What are taxes?", "How do I file taxes?", "What is income tax?", "Why do I need to pay taxes?"],
+            "responses": [
+                "Taxes are mandatory contributions to the government based on income or purchases.",
+                "You can file taxes online using tax preparation software or consult a tax professional.",
+                "Income tax is a tax on your earnings, and it funds public services like education and infrastructure."
+            ]
+        },
+        {
+            "tag": "emergency_fund",
+            "patterns": ["What is an emergency fund?", "How much should I save for emergencies?", "Why do I need an emergency fund?"],
+            "responses": [
+                "An emergency fund is money set aside for unexpected expenses like medical bills or car repairs.",
+                "Aim to save 3-6 months' worth of living expenses in your emergency fund.",
+                "It provides financial security during unforeseen situations."
+            ]
+        },
+        {
+            "tag": "insurance",
+            "patterns": ["What is insurance?", "Why do I need insurance?", "What types of insurance are there?"],
+            "responses": [
+                "Insurance is a contract that provides financial protection against risks or losses.",
+                "Common types of insurance include health, auto, home, and life insurance.",
+                "Having insurance protects you from significant financial burdens in emergencies."
+            ]
+        },
+        {
+            "tag": "general_advice",
+            "patterns": ["Can you give me financial advice?", "What are some financial tips?", "How do I become financially secure?"],
+            "responses": [
+                "Track your spending, save regularly, and avoid unnecessary debt.",
+                "Invest in your knowledge about personal finance to make informed decisions.",
+                "Set financial goals and review them periodically to stay on track."
+            ]
+        },
+        {
+            "tag": "contact",
+            "patterns": ["How can I contact you?", "Can I reach you for more help?", "Do you have support?"],
+            "responses": [
+                "I'm always here to help via this chatbot. For detailed support, consider consulting a financial advisor.",
+                "Feel free to ask me more questions anytime!"
+            ]
+        },
+        {
+            "tag": "compounding",
+            "patterns": ["What is compounding?", "How does compound interest work?", "Explain compounding in finance", "Why is compounding important?"],
+            "responses": [
+                "Compounding is the process where the earnings on an investment generate additional earnings over time.",
+                "Compound interest is calculated on the initial principal and the accumulated interest from previous periods.",
+                "Compounding helps your money grow faster as it earns interest on interest."
+            ]
+        },
+        {
+            "tag": "simple_interest",
+            "patterns": ["What is simple interest?", "How is simple interest calculated?", "Can you explain simple interest?"],
+            "responses": [
+                "Simple interest is calculated using the formula: Principal × Rate × Time.",
+                "It is the interest earned only on the principal amount, not on accumulated interest.",
+                "Simple interest is commonly used for short-term loans or investments."
+            ]
+        },
+        {
+            "tag": "discounts",
+            "patterns": ["What are discounts?", "How are discounts calculated?", "What is a percentage discount?", "Can you explain discounts?"],
+            "responses": [
+                "A discount is a reduction in the price of a product or service.",
+                "Percentage discounts are calculated by multiplying the discount rate by the original price.",
+                "Discounts are often used as promotional tools to attract customers."
+            ]
+        },
+        {
+            "tag": "inflation",
+            "patterns": ["What is inflation?", "How does inflation affect my money?", "Explain inflation", "Why is inflation important?"],
+            "responses": [
+                "Inflation is the rate at which the general level of prices for goods and services rises over time.",
+                "It reduces the purchasing power of money, meaning your money buys less as prices increase.",
+                "Understanding inflation is important for making long-term financial plans."
+            ]
+        },
+        {
+            "tag": "tax_deductions",
+            "patterns": ["What are tax deductions?", "How can I claim tax deductions?", "Explain tax deductions"],
+            "responses": [
+                "Tax deductions are expenses that reduce your taxable income, lowering the amount of tax you owe.",
+                "Common deductions include medical expenses, mortgage interest, and charitable contributions.",
+                "Check your country's tax laws for eligible deductions and how to claim them."
+            ]
+        },
+        {
+            "tag": "net_worth",
+            "patterns": ["What is net worth?", "How is net worth calculated?", "Explain net worth in finance"],
+            "responses": [
+                "Net worth is the value of all your assets minus your liabilities.",
+                "It provides a snapshot of your financial health at a given point in time.",
+                "Positive net worth means you own more than you owe, while negative net worth means the opposite."
+            ]
+        },
+        {
+            "tag": "mortgage",
+            "patterns": ["What is a mortgage?", "How do mortgages work?", "Can you explain mortgages?"],
+            "responses": [
+                "A mortgage is a loan used to purchase property or real estate.",
+                "The borrower repays the loan over time, with interest, to the lender.",
+                "Mortgages typically have fixed or variable interest rates."
+            ]
+        },
+        {
+            "tag": "discounted_cash_flow",
+            "patterns": ["What is discounted cash flow?", "Explain DCF", "How is discounted cash flow used?"],
+            "responses": [
+                "Discounted cash flow (DCF) is a method to estimate the value of an investment based on its expected future cash flows.",
+                "It considers the time value of money by discounting future cash flows to their present value.",
+                "DCF is widely used in business and finance to assess investment opportunities."
+            ]
+        },
+        {
+            "tag": "liquidity",
+            "patterns": ["What is liquidity?", "Why is liquidity important?", "Explain liquidity in finance"],
+            "responses": [
+                "Liquidity refers to how quickly an asset can be converted into cash without significantly affecting its value.",
+                "High liquidity means an asset can be sold quickly, like cash or stocks.",
+                "Low liquidity assets, like real estate, may take longer to sell."
+            ]
+        },
+        {
+            "tag": "opportunity_cost",
+            "patterns": ["What is opportunity cost?", "Can you explain opportunity cost?", "Why is opportunity cost important?"],
+            "responses": [
+                "Opportunity cost is the value of the next best alternative that you give up when making a decision.",
+                "It's a key concept in economics and finance to evaluate trade-offs.",
+                "Considering opportunity costs helps you make better financial decisions."
+            ]
+        },
+        {
+            "tag": "financial_ratios",
+            "patterns": ["What are financial ratios?", "Explain financial ratios", "Why are financial ratios important?"],
+            "responses": [
+                "Financial ratios are metrics used to evaluate a company's financial performance.",
+                "Common ratios include debt-to-equity, return on investment, and current ratio.",
+                "These ratios help investors and managers make informed decisions."
+            ]
+        },
+        {
+            "tag": "fixed_vs_variable_costs",
+            "patterns": ["What are fixed costs?", "What are variable costs?", "Explain fixed and variable costs"],
+            "responses": [
+                "Fixed costs remain constant regardless of production levels, like rent or salaries.",
+                "Variable costs change with production volume, like raw materials or utilities.",
+                "Understanding both helps in effective budgeting and cost management."
+            ]
+        },
+        {
+            "tag": "interest_rate",
+            "patterns": ["What is an interest rate?", "How do interest rates work?", "Explain interest rates"],
+            "responses": [
+                "An interest rate is the cost of borrowing money, expressed as a percentage of the principal.",
+                "Higher rates increase borrowing costs, while lower rates make loans more affordable.",
+                "Interest rates are set by lenders and influenced by central banks."
+            ]
+        },
+        {
+            "tag": "financial_goals",
+            "patterns": ["How do I set financial goals?", "What are financial goals?", "Why are financial goals important?"],
+            "responses": [
+                "Financial goals are objectives you aim to achieve with your money, like buying a house or saving for retirement.",
+                "Set SMART goals: Specific, Measurable, Achievable, Relevant, and Time-bound.",
+                "Regularly review and adjust your goals as needed."
+            ]
+        },
+        {
+            "tag": "economic_indicators",
+            "patterns": ["What are economic indicators?", "Explain economic indicators", "Why are economic indicators important?"],
+            "responses": [
+                "Economic indicators are statistics that show the state of an economy, like GDP, unemployment rate, or inflation.",
+                "They help policymakers, investors, and businesses understand economic trends.",
+                "Monitoring indicators can guide financial decisions and investments."
+            ]
+        },
+        {
+            "tag": "cryptocurrency",
+            "patterns": ["What is cryptocurrency?", "Can you explain Bitcoin?", "How do cryptocurrencies work?"],
+            "responses": [
+                "Cryptocurrency is a digital or virtual currency that uses cryptography for security.",
+                "Bitcoin is the first and most well-known cryptocurrency, but there are many others like Ethereum and Litecoin.",
+                "Cryptocurrencies operate on blockchain technology, which ensures transparency and security."
+            ]
+        },
+        {
+            "tag": "loan_types",
+            "patterns": ["What are the types of loans?", "Can you explain personal loans?", "What is the difference between secured and unsecured loans?"],
+            "responses": [
+                "Common loan types include personal loans, student loans, auto loans, and mortgages.",
+                "Secured loans are backed by collateral, while unsecured loans are not.",
+                "Choose a loan type based on your needs and financial situation."
+            ]
+        },
+        {
+            "tag": "student_loans",
+            "patterns": ["What are student loans?", "How do student loans work?", "Explain student loan repayment."],
+            "responses": [
+                "Student loans are borrowed funds to pay for education expenses like tuition and books.",
+                "Federal student loans often have lower interest rates and flexible repayment options.",
+                "Repayment begins after graduation, with options like income-driven repayment plans."
+            ]
+        },
+        {
+            "tag": "financial_independence",
+            "patterns": ["What is financial independence?", "How do I achieve financial independence?", "Explain financial independence."],
+            "responses": [
+                "Financial independence means having enough income to cover your expenses without relying on active employment.",
+                "Achieve it by saving, investing, and reducing unnecessary expenses.",
+                "Building multiple income streams can also help reach financial independence."
+            ]
+        },
+        {
+            "tag": "savings_accounts",
+            "patterns": ["What is a savings account?", "How do savings accounts work?", "What are the benefits of savings accounts?"],
+            "responses": [
+                "A savings account is a bank account that earns interest on your deposits.",
+                "It is a secure way to save money and access it when needed.",
+                "Savings accounts are great for short-term goals and emergency funds."
+            ]
+        },
+        {
+            "tag": "fixed_deposits",
+            "patterns": ["What is a fixed deposit?", "How do fixed deposits work?", "Why invest in fixed deposits?"],
+            "responses": [
+                "A fixed deposit (FD) is a financial instrument where you invest a lump sum for a fixed tenure at a guaranteed interest rate.",
+                "FDs are low-risk investments that provide stable returns.",
+                "They are suitable for conservative investors seeking safety and predictability."
+            ]
+        },
+        {
+            "tag": "budget_tracking_tools",
+            "patterns": ["What are budget tracking tools?", "How can I track my expenses?", "Recommend budget tracking apps."],
+            "responses": [
+                "Budget tracking tools like Mint, YNAB (You Need A Budget), and PocketGuard help you monitor your income and expenses.",
+                "They provide insights into your spending patterns and assist in staying on budget.",
+                "Many tools offer features like goal tracking and bill reminders."
+            ]
+        },
+        {
+            "tag": "employer_benefits",
+            "patterns": ["What are employer benefits?", "How do I maximize employer benefits?", "Can you explain employer-provided benefits?"],
+            "responses": [
+                "Employer benefits include perks like health insurance, retirement plans, and paid time off.",
+                "Take advantage of 401(k) matching, flexible spending accounts (FSAs), and professional development opportunities.",
+                "Review your benefits package annually to ensure you’re utilizing all available options."
+            ]
+        },
+        {
+            "tag": "financial_scams",
+            "patterns": ["How do I avoid financial scams?", "What are common financial scams?", "Can you give tips to avoid fraud?"],
+            "responses": [
+                "Be cautious of unsolicited offers and deals that seem too good to be true.",
+                "Never share sensitive information like passwords or PINs with anyone.",
+                "Regularly monitor your accounts for suspicious activity."
+            ]
+        },
+        {
+            "tag": "estate_planning",
+            "patterns": ["What is estate planning?", "Why is estate planning important?", "Explain estate planning in finance."],
+            "responses": [
+                "Estate planning involves arranging the management and distribution of your assets after your death.",
+                "It includes creating a will, setting up trusts, and assigning power of attorney.",
+                "Proper estate planning ensures your wishes are carried out and minimizes taxes."
+            ]
+        },
+        {
+            "tag": "forex_trading",
+            "patterns": ["What is forex trading?", "How does foreign exchange trading work?", "Can you explain forex trading?"],
+            "responses": [
+                "Forex trading is the buying and selling of currencies on the foreign exchange market.",
+                "Traders aim to profit from changes in exchange rates between currency pairs.",
+                "It is a high-risk, high-reward activity suitable for experienced investors."
+            ]
+        },
+        {
+            "tag": "banking_basics",
+            "patterns": ["What is a bank account?", "How do I open a bank account?", "Can you explain checking accounts?"],
+            "responses": [
+                "A bank account is a safe place to store your money and manage financial transactions.",
+                "To open a bank account, visit a bank with necessary documents like ID proof and address proof.",
+                "Checking accounts are used for everyday transactions, while savings accounts are for storing money and earning interest."
+            ]
+        },
+        {
+            "tag": "basic_expenses",
+            "patterns": ["What are basic expenses?", "Can you explain essential expenses?", "What are fixed expenses?"],
+            "responses": [
+                "Basic expenses are necessary costs like rent, utilities, food, and transportation.",
+                "These are expenses that are usually consistent and mandatory for daily living.",
+                "Track your fixed expenses to ensure your budget is balanced."
+            ]
+        },
+        {
+            "tag": "variable_expenses",
+            "patterns": ["What are variable expenses?", "How do I manage variable costs?", "Explain discretionary expenses."],
+            "responses": [
+                "Variable expenses are costs that can change from month to month, like dining out or entertainment.",
+                "Managing variable expenses involves setting a budget for them and prioritizing your needs over wants.",
+                "Cutting back on discretionary expenses is a great way to save money."
+            ]
+        },
+        {
+            "tag": "savings_vs_investment",
+            "patterns": ["What is the difference between saving and investing?", "Should I save or invest?", "Explain saving versus investing."],
+            "responses": [
+                "Saving involves putting money aside for short-term goals or emergencies with low risk and low returns.",
+                "Investing is committing money to grow wealth over time, typically with higher risk and potential returns.",
+                "Both saving and investing are important for achieving financial stability and growth."
+            ]
+        },
+        {
+            "tag": "mutual_funds",
+            "patterns": [
+              "What are mutual funds?","How do mutual funds work?","Can you explain mutual funds?","What is the best way to invest in mutual funds?","Tell me about mutual funds","How do I start investing in mutual funds?"],
+            "responses": [
+              "Mutual funds are investment vehicles that pool together money from many investors to invest in a diversified portfolio of stocks, bonds, or other securities. They are managed by professional fund managers.",
+              "Investing in mutual funds allows you to diversify your investments and reduce risk. A fund manager handles the investment decisions based on your chosen fund's objectives.",
+              "To start investing in mutual funds, you can open an account with a mutual fund company or use an online brokerage platform. It's important to choose funds that align with your financial goals and risk tolerance."
+            ]
+        },        
+        {
+            "tag": "financial_literacy",
+            "patterns": ["What is financial literacy?", "Why is financial literacy important?", "Explain financial education."],
+            "responses": [
+                "Financial literacy is the ability to understand and manage your personal finances effectively.",
+                "It involves knowledge of budgeting, saving, investing, and avoiding debt.",
+                "Being financially literate empowers you to make informed decisions and achieve financial stability."
+            ]
+        },
+        {
+            "tag": "account_opening",
+            "patterns": [
+              "How do I open a bank account?",
+              "What are the requirements to open a savings account?",
+              "Can you guide me through the account opening process?"
+            ],
+            "responses": [
+              "To open a bank account, you'll need identification documents, proof of address, and an initial deposit."
+            ]
+        },
+        {
+            "tag": "account_balance",
+            "patterns": [
+              "What is my account balance?",
+              "Can you tell me my current balance?",
+              "How do I check my balance?"
+            ],
+            "responses": [
+              "You can check your balance by logging into your account online or through our mobile app."
+            ]
+        },
+        {
+            "tag": "transaction_history",
+            "patterns": [
+              "How do I view my transaction history?",
+              "Can you show me my recent transactions?",
+              "Where can I find a list of my transactions?"
+            ],
+            "responses": [
+              "To view your transaction history, log in to your account and navigate to the transactions section."
+            ]
+        },
+        {
+            "tag": "security_concerns",
+            "patterns": [
+              "How secure is online banking?",
+              "What should I do if I suspect fraud?",
+              "How do I protect my account from hackers?"
+            ],
+            "responses": [
+              "Online banking uses advanced security measures like encryption. Always avoid sharing passwords and report suspicious activity immediately."
+            ]
+        },
+        {
+            "tag": "card_management",
+            "patterns": [
+              "How do I activate my debit card?",
+              "What should I do if I lose my credit card?",
+              "Can I block my card temporarily?"
+            ],
+            "responses": [
+              "Activate your debit card by calling customer service or using the bank's mobile app. To block a lost card, call the helpline immediately."
+            ]
+        },
+        {
+            "tag": "currency_exchange",
+            "patterns": [
+              "What is today's exchange rate?",
+              "How do I exchange currency?",
+              "Where can I get foreign currency?"
+            ],
+            "responses": [
+              "Check the latest exchange rates on our website or app. Foreign currency can also be exchanged at authorized forex dealers or partner outlets"
+            ]
+        },
+        {
+            "tag": "equity",
+            "patterns": [
+                "What is equity?",
+                "Can you explain equity?",
+                "How does equity work?",
+                "What is the importance of equity in a business?"
+            ],
+            "responses": ["Equity represents ownership in a business or company. It is the value of the shares issued by a company, typically in exchange for funding. In business, equity is an essential aspect of financing and ownership structure."]
+        },
+        {
+            "tag": "stock",
+            "patterns": [
+                "What is a stock?",
+                "How do stocks work?",
+                "Can you explain stock market?",
+                "What is the role of stocks in business?"
+            ],
+            "responses": ["A stock represents a share in the ownership of a company and constitutes a claim on part of the company’s assets and earnings. Companies issue stock to raise capital for expansion, development, or other business activities."]
+        },
+        {
+            "tag": "valuation",
+            "patterns": [
+                "What is a business valuation?",
+                "How do you calculate a company's valuation?",
+                "What factors are considered in business valuation?",
+                "Why is valuation important?"
+            ],
+            "responses": ["Valuation is the process of determining the present value of a business or asset. It involves assessing financial statements, growth prospects, industry conditions, and market competition to arrive at an estimated worth."]
+        },
+        {
+            "tag": "USP",
+            "patterns": [
+                "What is a unique selling proposition?",
+                "Can you explain USP?",
+                "What makes a good USP?",
+                "Why is USP important for a business?"
+            ],
+            "responses": ["A Unique Selling Proposition (USP) is a distinct benefit or feature that sets a product or service apart from competitors. It is a critical element in marketing and branding strategies to attract and retain customers."]
+        },
+        {
+            "tag": "valuation_pitch",
+            "patterns": [
+                "How do you pitch a company valuation to investors?",
+                "What is a good way to present business valuation?",
+                "How do I convince investors about my company’s worth?"
+            ],
+            "responses": ["When pitching a valuation to investors, focus on demonstrating the potential for growth, your company's competitive advantage, strong financial performance, and future scalability. Be clear about your assumptions and justify your valuation with evidence."]
+        },
+        {
+            "tag": "profit_margin",
+            "patterns": [
+                "What is profit margin?",
+                "How is profit margin calculated?",
+                "Why is profit margin important?",
+                "Can you explain gross profit margin?"
+            ],
+            "responses": ["Profit margin is a financial metric used to assess a company's profitability. It is calculated as the percentage of revenue that exceeds the costs of production. Higher profit margins indicate greater profitability and efficiency."]
+        },
+        {
+            "tag": "funding_round",
+            "patterns": [
+                "What is a funding round?",
+                "Can you explain seed funding?",
+                "What are the different stages of funding rounds?",
+                "Why do startups go for Series A funding?"
+            ],
+            "responses": ["A funding round is a stage in the process of raising capital for a startup. It typically includes Seed Funding, Series A, Series B, etc., with each round corresponding to different stages of growth and increasing valuation."]
+        },
+        {
+            "tag": "ROI",
+            "patterns": [
+                "What is ROI?",
+                "How do you calculate ROI?",
+                "Why is ROI important in business?"
+            ],
+            "responses": ["Return on Investment (ROI) is a performance metric used to evaluate the efficiency or profitability of an investment. It is calculated by dividing the net profit by the initial cost of the investment, expressed as a percentage."]
+        },
+        {
+            "tag": "exit_strategy",
+            "patterns": [
+                "What is an exit strategy?",
+                "Can you explain exit options for startups?",
+                "Why is exit strategy important for investors?"
+            ],
+            "responses": ["An exit strategy is a plan for an investor to sell their stake in a business, typically through a sale, IPO, or acquisition. It's important for investors to know when and how they will exit to realize returns on their investments."]
+        },
+        {
+            "tag": "market_share",
+            "patterns": [
+                "What is market share?",
+                "How is market share calculated?",
+                "Why is market share important for a business?"
+            ],
+            "responses": ["Market share is the portion of a market controlled by a particular company or product. It is calculated by dividing a company's total sales by the overall sales in the market. Higher market share can indicate dominance and business success."]
+        }
+    ]
+}
