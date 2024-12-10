@@ -20,7 +20,9 @@ The **Financial Literacy Chatbot** helps users by answering financial questions 
    ```bash
    git clone <repository_url>
 2. Install the necessary dependencies:
+   ```bash
    pip install -r requirements.txt
-3. Run the chatbot app:
+4. Run the chatbot app:
+   ```bash
    streamlit run app.py
 
